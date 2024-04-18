@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="./css/cadastro.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <a href="./index.html">
+                <span>Loja de Roupas</span>
+            </a>
+            <a href="./cadastro.html">Cadastro</a>
+            <a href="./produtos.html">Produtos</a>
+
+        </nav>
+
+        <main>
+            <h1>Cadastro de Clientes</h1>
+
+            <form action="./cadastro.html">
+                <fieldset>
+                    <legend>Informações Pessoais</legend>
+                    <label for="nome">Nome</label>
+                    <br />
+                    <input type="text" name="nome" required />
+                    <br />
+                    <label for="email">Email</label>
+                    <br />
+                    <input type="text" name="email" required />
+                    <br />
+                    <label for="telefone">Telefone</label>
+                    <br />
+                    <input type="number" name="telefone" required />
+                    <br />
+                    <label for="cpf">CPF</label>
+                    <br />
+                    <input type="text" name="cpf" maxlength="14" minlength="14" required />
+                    <br />
+                    <label for="data_nasc">Data de Nascimeto</label>
+                    <br />
+                    <input type="date" name="data_nasc" required />
+                    <br />
+                    <label for="rg">RG</label>
+                    <br />
+                    <input type="number" maxlength="9" minlength="9" name="rg" required />
+
+                </fieldset>
+                <fieldset>
+                    <legend>Endereço</legend>
+
+                    <label for="cep">CEP</label>
+                    <br />
+                    <input type="number" name="cep" />
+                    <br />
+                    <label for="rua">Rua</label>
+                    <br />
+                    <input type="text" name="rua" />
+                    <br />
+                    <label for="numero">Numero</label>
+                    <br />
+                    <input type="number" name="numero" />
+                    <br />
+                    <label for="bairro">Bairro</label>
+                    <br />
+                    <input type="text" name="bairro" />
+
+                </fieldset>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>
